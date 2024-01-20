@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -459,6 +460,7 @@ body.light-theme{
 }
 
 .about__subtitle{
+  font-family: 'Roboto', sans-serif;
   font-size: var(--tiny-font-size);
 }
 
@@ -761,6 +763,7 @@ body.light-theme{
 }
 
 .contact__card-data{
+  font-family: 'Roboto', sans-serif;
   display: block;
   margin-bottom: 0.75rem;
 }
@@ -856,6 +859,7 @@ body.light-theme{
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .footer__social-link{
@@ -1111,7 +1115,7 @@ body.light-theme{
   }
 
   .testimonial__container{
-    width: 800px;
+    width: 965px;
   }
 
   .testimonial__card{

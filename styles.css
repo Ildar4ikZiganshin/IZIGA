@@ -600,6 +600,7 @@ body.light-theme{
   display: flex;
   align-items: flex-start;
   column-gap: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .services__modal-icon{
@@ -653,6 +654,7 @@ body.light-theme{
 }
 
 .work__img{
+  height: 195px;
   border-radius: 1rem;
   margin-bottom: 0.75rem;
 }
@@ -1095,7 +1097,7 @@ body.light-theme{
   }
 
   .services__card{
-    padding: 5rem 2rem 1.5rem;
+    padding: 5rem 1rem 1.5rem;
   }
 
   .work__container{
@@ -1103,10 +1105,13 @@ body.light-theme{
   }
 
   .work__card{
+    width: 500px;
     padding: 1.25rem;
   }
 
   .work__img{
+    width: 500px;
+    height: 300px;
     margin-bottom: 1rem;
   }
 

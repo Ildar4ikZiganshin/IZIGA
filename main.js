@@ -134,3 +134,31 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) => {
+  e.preventDefault()
+  //serviceID - templateID - #form - publicKey
+  emailjs.sendForm('service_skgxxyf','template_3svps2p','#contact-form','6rhxxXbCKLjXOn0ir')
+  .then (() => {
+    //show sent message
+    contactMessage.textContent = 'Message sent successfully ✅'
+
+    //remove message after five seconds
+    setTimeout(() => {
+      contactMessage.textContent = ''
+    }, 5000)
+
+    //clear input fields
+    contactForm.reset()
+
+  }, () => {
+    //show error message
+    contactMessage.textContent = 'Message not sent (service error) ❌'
+  })
+}
+
+contactForm.addEventListener('submit', sendEmail)

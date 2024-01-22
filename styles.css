@@ -831,6 +831,11 @@ body.light-theme{
   resize: none;
 }
 
+.contact__message{
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+}
+
 /*=============== FOOTER ===============*/
 .footer{
   background-color: var(--first-color);
